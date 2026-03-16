@@ -3,7 +3,7 @@ cask "target" do
   name "target"
   desc ""
   homepage "https://github.com/netdata-be/target-cli"
-  version "2.0.7"
+  version "2.0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,17 +13,17 @@ cask "target" do
 
   on_macos do
     url "https://github.com/netdata-be/target-cli/releases/download/v#{version}/target-cli_#{version}_darwin_all.tar.gz"
-    sha256 "6962f5ae61c110d50588de8c8f2457d7a7e5e70946da03eedff92e1d37e950e9"
+    sha256 "71bb55af4c12206521096372fd2596d0715f6d21771057e42fe697cba756330f"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/netdata-be/target-cli/releases/download/v#{version}/target-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "e771bf526132effd3567254e9250b134d6cb0051b8a06f14815c6c431998dba0"
+      sha256 "d7c0896e1ae2a2964c74ae8186a5926ef4c595b1a971d7286e93e31bc956d450"
     end
     on_arm do
       url "https://github.com/netdata-be/target-cli/releases/download/v#{version}/target-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "740ccaf02dd49d592975b6a2f107a697e4cf23da0d8489cce3a126e6f7672db2"
+      sha256 "3700c0e4361b299773bb6c45f0ab6d507c6e29047f158f5155ca6431163d3bf5"
     end
   end
 
